@@ -7,7 +7,7 @@
         }
         
         else{
-            window.location.href=("/code/front-end/store/html/main-page/home.html");
+            window.location.href=("../davit-system/code/front-end/store/html/main-page/home.html");
     return 0;
         }
         
@@ -16,5 +16,6 @@
     
 
     function signUp (){
-        window.location.href="/code/front-end/front_page/html/signUp.html";
+        window.location.href="../davit-system/code/front-end/front_page/html/signUp.html";
+
         }
