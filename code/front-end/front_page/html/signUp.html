@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <link rel="icon" type="image/png" href=".../../../../logo/logo-company.png"> 
+</head>
+<style>
+    .video-bg {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+        /* Push video behind content */
+    }
+ .head-icon {
+        display: flex;
+        width: 10%;
+
+       
+        justify-content: center;
+         
+
+    }
+
+    .head-icon img {
+        width: 30%;
+        justify-self: center;
+
+    }
+    .head-icon h3{
+        color: white;
+        display: flex;
+        padding-left: 10%;
+        justify-self: center;
+    }
+
+    .login-form  {
+        /* 
+        background-color: gray;
+        display: flex;
+        justify-self: center;
+        opacity: 70%;
+        width: 450px;
+        height: 500px;
+        border-radius: 25px;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px); */
+        margin-top: 5%;
+ 
+
+        display: flex;
+        justify-self: center;
+
+        background: rgba(128, 128, 128, 0.6);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+
+        width: 450px;
+        height: 500px;
+        border-radius: 25px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* horizontal center */
+        justify-content: center;
+        /* vertical center */
+        text-align: center;
+    }
+.wellcome   {
+  
+    color: rgb(255, 255, 255);
+    margin-bottom: 10%;
+    text-align: left;
+    display:flexbox;
+}
+.input-box {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    gap: 15px;
+    
+}
+.input-box {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input-box input {
+    padding: 10px;
+    text-align: left;
+    border-radius: 10px;
+}
+.asset {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+}
+.asset p{
+ 
+    margin-right:25%;
+}
+.button {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.button button {
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;    
+}
+
+
+ 
+</style>
+
+<body>
+    <video autoplay muted loop class="video-bg">
+        <source src="../../../front-end/store/background/video-back.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- header -->
+    <div class="head-icon">
+        <img src="../../../../logo/logo-company.png " alt="">
+        <h3>Acha System</h3>
+    </div>
+
+    <!-- form-login -->
+
+    <div class="login-form">
+        <div class="wellcome">
+            <h3>Welcome Back</h3>
+            <h5>Enter your information</h5>
+        </div>
+        <div class="input-box">
+            <input type="email" id="email" placeholder="Enter your email" required>
+            <input type="password" id="password" placeholder="Enter your password" required>
+            <input type="re_password" id="re_password" placeholder="Re-enter your password" required>
+        </div>
+        <div class="asset">
+            <img src="../../../../icon/check_box_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+            <p>Remember me</p>
+            <a href="index.html">Already have account?</a>
+        </div>
+        <div class="button">
+            <button type="submit" id="signUp" onclick="register()">Register Now</button>
+
+        </div>
+
+    </div>
+<script src="../java-script/sign_up_fun.js"></script>
+
+</body>
+
+</html>

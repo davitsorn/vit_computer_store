@@ -1,0 +1,145 @@
+body{
+    background-color: rgb(231, 231, 231);
+}
+.head-main {
+    background-color: rgb(255, 187, 0);
+    width: 100%;
+    height: 169px;
+    position: fixed;
+    margin-top: -170px;
+    margin-left: -8px;
+    border-bottom: solid 2px rgb(255, 187, 0);
+
+}
+
+.head-main .content-first-head {
+    display: flex;
+    background-color: rgb(100, 100, 100);
+    list-style: none;
+    align-items: center;
+    height: 60px;
+    
+}
+.head-main .content-first-head li {
+    font-size: 120%;
+    margin: auto;
+    color: white;
+}
+/* Mid Head Container */
+.head-main .content-mid-head {
+    background-color: rgb(255, 255, 255);
+    height: 33px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-bottom: solid 2px rgb(255, 187, 0);
+}
+/* Company Name */
+.head-main .content-mid-head .company-name {
+    background-color: rgb(255, 187, 0);
+    width: 200px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.head-main .content-mid-head .company-name h4 {
+    margin-left: 10px;
+}
+
+/* Menu Content */
+.head-main .content-mid-head .menu-content {
+    display: flex;
+    list-style: none;
+    margin-left: 20px;
+    height: 80%;
+    align-items: center;
+
+}
+
+.head-main .content-mid-head .menu-content li a {
+    text-decoration: none;
+}
+
+/* Menu container with spacing */
+.head-main .content-mid-head .menu-content {
+    display: flex;
+    list-style: none;
+    margin-left: 20px;
+    height: 100%;
+    align-items: center;
+    gap: 10px;
+    /* adds spacing between buttons */
+}
+
+/* Each menu item */
+.head-main .content-mid-head .menu-content li {
+    position: relative;
+    padding: 0 20px;
+    cursor: pointer;
+    color: purple;
+
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+/* Link style inside */
+.head-main .content-mid-head .menu-content li a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    padding: 8px 0;
+    /* controls button height */
+}
+
+/* Hover effect */
+.head-main .content-mid-head .menu-content li:hover {
+    color: rgb(255, 187, 0);
+}
+
+/* Highlight with top border for active state */
+.head-main .content-mid-head .menu-content li::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 10%;
+    width: 70%;
+    height: 3px;
+    background-color: orange;
+    transform: scaleX(0);
+    transform-origin: center;
+
+    transition: transform 0.3s ease;
+    border-radius: 5px;
+}
+
+.head-main .content-mid-head .menu-content li:hover::before,
+.head-main .content-mid-head .menu-content li.active::before {
+    transform: scaleX(1);
+}
+
+.head-main .content-mid-head .logo {
+    display: flex;
+    justify-content: flex-end;
+    /* Pushes content to the right */
+    list-style: none;
+    /* Removes bullets if <li> is used */
+    gap: 10px;
+    padding: 10px;
+    margin-left: auto;
+
+
+
+}
+
+.head-main .content-mid-head .logo li {
+    display: inline-block;
+    margin-left: auto;
+}
+
+.head-main .content-mid-head .logo li img {
+    padding-left: 20px;
+    width: 20px;
+}
+
+

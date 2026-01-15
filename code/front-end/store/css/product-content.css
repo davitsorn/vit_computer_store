@@ -1,0 +1,147 @@
+
+.video-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1; /* Push video behind content */
+    }
+
+    /* Content styling */
+    .content {
+      position: relative;
+      z-index: 1;
+      color: white;
+      text-align: center;
+      font-size: 2rem;
+      top: 40%;
+    }
+
+    /* Optional overlay for better text contrast */
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 187, 0, 0.4); /* semi-transparent dark layer */
+      z-index: 0;
+    }
+.product-main {
+    background-color: rgba(255, 255, 255, 0.829);
+    width: 90%;
+    height: 100%;
+    align-self: center;
+    margin: auto;
+    margin-top: 170px;
+    justify-self: center;
+}
+
+/* text */
+
+.product-main h4 {
+    text-align: left;
+    margin-left: 15px;
+    font-size: 20px;
+    color: orange;
+
+
+}
+
+.product-main h3 {
+    text-align: center;
+    margin: auto;
+    margin-top: 10PX;
+    font-size: 18px;
+    color: rebeccapurple;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* product */
+
+.product-main .all-product {
+    display: flex;
+    margin-top: 20px;
+
+    margin-left: 15px;
+    margin-right: 15px;
+    list-style: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+
+}
+
+.product-main .all-product li {
+    border: solid 1px red;
+    justify-content: center;
+    width: 450px;
+    margin-left: 2px;
+    margin-right: 2px;
+
+}
+
+.product-main .all-product li img {
+    margin: 5px auto;
+    /* <-- changed this line */
+    display: block;
+    width: 85%;
+     
+}
+.product-main .all-product li img :hover {
+    margin: 5px auto;
+    /* <-- changed this line */
+    display: block;
+    width: 87%;
+     
+}
+
+
+
+.product-main .all-product h5 {
+    text-align: center;
+    margin: 0 0 0 0;
+}
+
+.product-main .all-product h6 {
+    text-align: center;
+    color: orange;
+    font-size: 20px;
+    margin: 0 0 0 0;
+}
+
+.product-main .all-product li p {
+    text-align: left;
+    margin-left: 10px;
+
+}
+
+.product-main .head-product img{
+    margin-top: 50px;
+    width: 100%;
+}
+
+.all-laptop-items a {
+    
+    color: rgb(190, 124, 0);
+    text-decoration: none;
+    list-style: none;
+    
+}
+.all-laptop-items a li{
+    padding : 2%;
+     
+    margin-left: 1%;
+    width:75px;
+    height: 100%;
+    padding: 10px;
+    border-radius: 5em;
+    border-bottom: 2px;
+
+}
+.all-laptop-items a  {
+
+ border-bottom: 2em;
+}
